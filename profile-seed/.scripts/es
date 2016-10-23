@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ELASTICSEARCH_BIN_FOLDER="/Users/USERNAME/FOLDER/elasticsearch/bin"
+
+# check for required input
+if [[ ! $1 ]]; then
+	echo "Usage: $0 {start|stop}"
+	exit 1
+fi
+
+if [[ $1 == "start" ]]; then
+	$ELASTICSEARCH_BIN_FOLDER/elasticsearch -d
+elif [[ $1 == "stop" ]]; then
+
+else
+	echo "Usage: $0 {start|stop}"
+fi

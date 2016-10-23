@@ -1,0 +1,18 @@
+[color]
+	sh = auto
+	ui = auto
+	pager = true
+[user]
+	name = User Name
+	email = email@domain.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[core]
+	pager = less
+[gui]
+	gcwarning = false
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[gc]
+	auto = 0
