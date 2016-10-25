@@ -17,27 +17,27 @@ alias reload="source ~/.profile"
 alias ls="ls -al"
 
 # run redis
-alias redis="~/Development/redis-3.2.1/src/redis-server"
+alias redis="~/PATH/TO/REDIS/FOLDER/redis-3.2.1/src/redis-server"
 
-# flyway commands
-alias flyway-boxbe="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/boxbe?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/boxbe/database/main\""
-alias flyway-analyst="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/source/ext-db/analyst-ng\""
+# flyway commands, assumes password is blank
+alias flyway-boxbe="/PATH/TO/FLYWAY/FOLDER/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/boxbe?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/PATH/TO/ANALYST/FOLDER/analyst-ng/boxbe/database/main\""
+alias flyway-analyst="/PATH/TO/FLYWAY/FOLDER/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/PATH/TO/ANALYST/FOLDER/analyst-ng/source/ext-db/analyst-ng\""
 
 # build commands
-alias build-test-all="pushd /Users/nstanard/Development/EDS/analyst-ng/; buildr clean package; popd;"
-alias build-all="pushd /Users/nstanard/Development/EDS/analyst-ng/; buildr clean package test=no; popd;"
-alias build-analyst="pushd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-analyst-ng/; buildr clean package test=no; popd;"
-alias build-admin="pushd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-admin-ng/; buildr clean package test=no; popd;"
+alias build-test-all="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/; buildr clean package; popd;"
+alias build-all="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/; buildr clean package test=no; popd;"
+alias build-analyst="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-analyst-ng/; buildr clean package test=no; popd;"
+alias build-admin="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-admin-ng/; buildr clean package test=no; popd;"
 
 # change dir to project folders
-alias analyst-ng="cd /Users/nstanard/Development/EDS/analyst-ng/"
-alias analyst="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-analyst-ng/src/main/webapp"
-alias admin="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-admin-ng/src/main/webapp"
-alias boxbe="cd /Users/nstanard/Development/EDS/analyst-ng/boxbe/webapp-boxbe/src/main/web-src"
+alias analyst-ng="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/"
+alias analyst="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-analyst-ng/src/main/webapp"
+alias admin="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-admin-ng/src/main/webapp"
+alias boxbe="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/boxbe/webapp-boxbe/src/main/web-src"
 
 # watch for front-end changes
-alias analyst-watch="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-analyst-ng/src/main/webapp && npm run watch"
-alias admin-watch="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-admin-ng/src/main/webapp && npm run watch"
+alias analyst-watch="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-analyst-ng/src/main/webapp && npm run watch"
+alias admin-watch="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-admin-ng/src/main/webapp && npm run watch"
 
 setjdk 1.8
 ulimit -n 1024
