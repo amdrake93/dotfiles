@@ -23,6 +23,9 @@ alias redis="~/Development/redis-3.2.1/src/redis-server"
 alias flyway-boxbe="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/boxbe?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/boxbe/database/main\""
 alias flyway-analyst="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/source/ext-db/analyst-ng\""
 
+# whitelabel account insert
+alias unlock-analyst="mysql -u root < $PERSONAL_SCRIPTS_LOCATION/whitelabel-insert"
+
 # change dir to project folders
 alias analyst-ng="cd /Users/nstanard/Development/EDS/analyst-ng/"
 alias analyst="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-analyst-ng/src/main/webapp"
