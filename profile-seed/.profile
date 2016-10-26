@@ -32,10 +32,10 @@ alias admin="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-admin-n
 alias boxbe="cd /Users/nstanard/Development/EDS/analyst-ng/boxbe/webapp-boxbe/src/main/web-src"
 
 # build commands
-alias build-test-all="pushd /Users/nstanard/Development/EDS/analyst-ng/; buildr clean package; popd;"
-alias build-all="pushd /Users/nstanard/Development/EDS/analyst-ng/; buildr clean package test=no; popd;"
 alias build-analyst="pushd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-analyst-ng/; buildr clean package test=no; popd;"
 alias build-admin="pushd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-admin-ng/; buildr clean package test=no; popd;"
+alias build-all="pushd /Users/nstanard/Development/EDS/analyst-ng/; buildr clean package test=no; popd;"
+alias build-test-all="pushd /Users/nstanard/Development/EDS/analyst-ng/; buildr clean package; popd;"
 
 # watch for front-end changes
 alias watch-analyst="cd /Users/nstanard/Development/EDS/analyst-ng/source/webapp-analyst-ng/src/main/webapp && npm run watch"
