@@ -1,7 +1,0 @@
-USE analyst
-
-INSERT INTO account_whitelabel_domain (account_id, whitelabel_domain) 
-VALUES (1, 'dev.eds.com');
-
-INSERT INTO account_whitelabel_domain (account_id, whitelabel_domain) 
-VALUES (2, 'neal.dev.emailanalyst.com');
