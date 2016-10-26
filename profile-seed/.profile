@@ -22,6 +22,8 @@ alias redis="~/Development/redis-3.2.1/src/redis-server"
 # flyway commands
 alias flyway-boxbe="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/boxbe?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/boxbe/database/main\""
 alias flyway-analyst="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/source/ext-db/analyst-ng\""
+alias flyway-analyst-dev="/Users/nstanard/Development/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analystFlywayDev?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/Users/nstanard/Development/EDS/analyst-ng/source/ext-db/analyst-ng-dev-load\""
+alias flyway-analyst-all="flyway-analyst clean && flyway-analyst migrate && flyway-analyst-dev clean && flyway-analyst-dev migrate"
 
 # change dir to project folders
 alias analyst-ng="cd /Users/nstanard/Development/EDS/analyst-ng/"
