@@ -22,6 +22,8 @@ alias redis="~/PATH/TO/REDIS/FOLDER/redis-3.2.1/src/redis-server"
 # flyway commands, assumes password is blank
 alias flyway-boxbe="/PATH/TO/FLYWAY/FOLDER/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/boxbe?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/PATH/TO/ANALYST/FOLDER/analyst-ng/boxbe/database/main\""
 alias flyway-analyst="/PATH/TO/FLYWAY/FOLDER/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/PATH/TO/ANALYST/FOLDER/analyst-ng/source/ext-db/analyst-ng\""
+alias flyway-analyst-dev="/PATH/TO/FLYWAY/FOLDER/flyway/flyway -user=root -url=\"jdbc:mysql://127.0.0.1:3306/analystFlywayDev?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:/PATH/TO/ANALYST/FOLDER/analyst-ng/source/ext-db/analyst-ng-dev-load\""
+alias flyway-analyst-all="flyway-analyst clean && flyway-analyst migrate && flyway-analyst-dev clean && flyway-analyst-dev migrate"
 
 # change dir to project folders
 alias analyst-ng="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/"
@@ -30,10 +32,10 @@ alias admin="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-admin-ng/src/ma
 alias boxbe="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/boxbe/webapp-boxbe/src/main/web-src"
 
 # build commands
-alias build-test-all="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/; buildr clean package; popd;"
-alias build-all="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/; buildr clean package test=no; popd;"
 alias build-analyst="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-analyst-ng/; buildr clean package test=no; popd;"
 alias build-admin="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-admin-ng/; buildr clean package test=no; popd;"
+alias build-all="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/; buildr clean package test=no; popd;"
+alias build-test-all="pushd /PATH/TO/ANALYST/FOLDER/analyst-ng/; buildr clean package; popd;"
 
 # watch for front-end changes
 alias watch-analyst="cd /PATH/TO/ANALYST/FOLDER/analyst-ng/source/webapp-analyst-ng/src/main/webapp && npm run watch"
