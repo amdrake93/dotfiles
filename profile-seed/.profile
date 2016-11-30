@@ -55,5 +55,5 @@ alias watch-admin="cd $ANALYST_PATH/source/webapp-admin-ng/src/main/webapp && np
 setjdk 1.8
 ulimit -n 1024
 
-bind '"^[[A":history-search-backward'
-bind '"^[[B":history-search-forward'
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
