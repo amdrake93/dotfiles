@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AngularJS",
+		"CSS Format",
+		"Emmet",
+		"ESLint",
+		"GitSavvy",
+		"JsFormat",
+		"LESS",
+		"Markdown Extended",
+		"MaxPane",
+		"Monokai Extended",
+		"Package Control",
+		"Theme - Midnight",
+		"Tomorrow Color Schemes",
+		"Wallaby"
+	]
+}
