@@ -67,3 +67,5 @@ ulimit -n 1024
 
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
+
+alias readywork="gitmelatest && flyway-analyst-all && build-all redis"
