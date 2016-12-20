@@ -16,20 +16,9 @@ alias reload="source ~/.profile"
 # always list all
 alias ls="ls -al"
 # Paths
-export REDIS_PATH="~/Development/redis-3.2.1"
-export FLYWAY_PATH="/Users/nstanard/Development/flyway"
-export ANALYST_PATH="/Users/nstanard/Development/EDS/analyst-ng"
-
-# MySQL User
-export MYSQL_USER="root"
-
-# MySQL Password
-export MYSQL_PASS=""
-
-# Paths
-export REDIS_PATH="~/"
-export FLYWAY_PATH="/Users/"
-export ANALYST_PATH="/Users/"
+export REDIS_PATH="~/Redis"
+export FLYWAY_PATH="/Users/alexanderdrake/Documents/flyway"
+export ANALYST_PATH="/Users/alexanderdrake/git/analyst-ng"
 
 # MySQL User
 export MYSQL_USER="root"
