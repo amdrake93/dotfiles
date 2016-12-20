@@ -31,24 +31,24 @@ alias redis="$REDIS_PATH/src/redis-server"
 
 # flyway commands
 alias flyway-boxbe="$FLYWAY_PATH/flyway -user=$MYSQL_USER -password=$MYSQL_PASS -url=\"jdbc:mysql://127.0.0.1:3306/boxbe?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:$ANALYST_PATH/boxbe/database/main\""
-alias flyway-analyst="$FLYWAY_PATH/flyway -user=$MYSQL_USER -password=$MYSQL_PASS -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:$ANALYST_PATH/source/ext-db/analyst-ng\""
-alias flyway-analyst-dev="$FLYWAY_PATH/flyway -user=$MYSQL_USER -password=$MYSQL_PASS -url=\"jdbc:mysql://127.0.0.1:3306/analystFlywayDev?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:$ANALYST_PATH/source/ext-db/analyst-ng-dev-load\""
-alias flyway-analyst-all="flyway-analyst clean && flyway-analyst migrate && flyway-analyst-dev clean && flyway-analyst-dev migrate"
+alias flyway-ng="$FLYWAY_PATH/flyway -user=$MYSQL_USER -password=$MYSQL_PASS -url=\"jdbc:mysql://127.0.0.1:3306/analyst?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:$ANALYST_PATH/source/ext-db/analyst-ng\""
+alias flyway-ng-dev="$FLYWAY_PATH/flyway -user=$MYSQL_USER -password=$MYSQL_PASS -url=\"jdbc:mysql://127.0.0.1:3306/analystFlywayDev?autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8\" -locations=\"filesystem:$ANALYST_PATH/source/ext-db/analyst-ng-dev-load\""
+alias flyway-ng-all="flyway-analyst clean && flyway-analyst migrate && flyway-analyst-dev clean && flyway-analyst-dev migrate"
 
 # change dir to project folders
-alias analyst-ng="cd $ANALYST_PATH/"
-alias analyst="cd $ANALYST_PATH/source/webapp-analyst-ng/src/main/webapp"
+alias ng="cd $ANALYST_PATH/"
+alias ngf="cd $ANALYST_PATH/source/webapp-analyst-ng/src/main/webapp"
 alias admin="cd $ANALYST_PATH/source/webapp-admin-ng/src/main/webapp"
 alias boxbe="cd $ANALYST_PATH/boxbe/webapp-boxbe/src/main/web-src"
 
 # build commands
 alias build-test-all="pushd $ANALYST_PATH/; buildr clean package; popd;"
 alias build-all="pushd $ANALYST_PATH/; buildr clean package test=no; popd;"
-alias build-analyst="pushd $ANALYST_PATH/source/webapp-analyst-ng/; buildr clean package test=no; popd;"
+alias build-ng="pushd $ANALYST_PATH/source/webapp-analyst-ng/; buildr clean package test=no; popd;"
 alias build-admin="pushd $ANALYST_PATH/source/webapp-admin-ng/; buildr clean package test=no; popd;"
 
 # watch for front-end changes
-alias watch-analyst="cd $ANALYST_PATH/source/webapp-analyst-ng/src/main/webapp && npm run watch"
+alias watch-ng="cd $ANALYST_PATH/source/webapp-analyst-ng/src/main/webapp && npm run watch"
 alias watch-admin="cd $ANALYST_PATH/source/webapp-admin-ng/src/main/webapp && npm run watch"
 
 setjdk 1.8
